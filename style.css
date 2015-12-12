@@ -188,7 +188,75 @@ Form Section
 
 
 
+/*===============================
+Top Cover and Menu
+===============================*/
 
+.container-cover-feature {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+.container-image {
+	position: relative;
+	height: 400px;
+	background: url("assets/background/photo-fox.jpg");
+	background-size: cover;
+	background-position: 50%;
+}
+
+
+.container-image img {
+	position: absolute;
+	left: 25px;
+	bottom: -15px;
+	width: 170px;
+	border: 2px solid #ddd;
+	border-radius: 50%;
+	box-shadow: 0 10px 10px 10px rgba(0,0,0,0.3);
+}
+
+
+.container-image h2 {
+	position: absolute;
+	bottom: 15px;
+	left: 220px;
+	color: white;
+	font-size: 30px;
+}
+
+
+.container-menu {
+	border: 1px solid #ddd;
+}
+
+
+.container-menu ul {
+	display: inline-block;
+}
+
+
+.container-menu li,
+.container-menu a {
+	display: inline-block;
+	padding: 15px 0;
+	width: 130px;
+	text-align: center;
+	border-right: 1px solid #ddd;
+}
+
+
+.container-menu li:first-child {
+	margin-left: 220px;
+	border-left: 1px solid #ddd;
+}
+
+
+.container-menu a {
+	float: right;
+
+}
 
 
 
