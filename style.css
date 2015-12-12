@@ -274,9 +274,10 @@ About Feature
 .title-about {
 	position: relative;
 	border-bottom: 1px solid #ccc;
-	background: #eee;
+	background: #1E2436;
 	height: 60px;
 	text-align: center;
+	color: white;
 }
 
 
@@ -302,12 +303,44 @@ About Feature
 }
 
 
+.information-about {
+	width: 45%;
+	float: left;
+}
+
+
+.know-more {
+	width: 55%;
+	float: right;
+}
+
+
+.information-about th,
+.information-about td {
+	text-align: left;
+	padding: 7px 0;
+}
+
+.information-about table {
+	margin-left: 30px;
+}
+
+.information-about td {
+	padding-left: 30px;
+}
 
 
 
 
 
+.container-about h2 {
+	font-size: 26px;
+	margin: 40px 30px 20px;
+}
 
+.know-more p {
+	margin: 30px 50px 30px 30px;
+}
 
 
 
