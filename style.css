@@ -6,9 +6,16 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
-input {
+input[type="submit"],
+select {
 	appearance: none;
 	-webkit-appearance: none;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
 }
 
 
@@ -45,13 +52,11 @@ header .logo h2 {
 
 .log-in input {
 	padding: 5px 10px;
-	border: 1px solid #eee;
+	border: 0;
 	font-size: 14px;
-	border-radius: 10px;
 }
 
 .log-in input[type="submit"] {
-	border: 1px solid hsla(224, 69%, 25%, 1);
 	background: hsla(224, 69%, 32%, 1);
 	color: white;
 	padding: 5px 25px;
@@ -80,13 +85,12 @@ Main Section
 Feature Section
 ===============================*/
 
-.feature-section h1 {
+.feature-section h2 {
 	font-size: 48px;
 	margin: 100px 0 50px 5%
 }
 
 .feature-section ul {
-	max-width: 100%;
 	font-size: 22px;
 	color: #777;
 	list-style-type: disc;
@@ -96,6 +100,71 @@ Feature Section
 .feature-section li {
 	padding: 15px;
 }
+
+
+/*=============================
+Form Section
+===============================*/
+
+.form-register h1 {
+	font-size: 60px;
+	margin: 50px 0 20px;
+}
+
+
+.form-register form {
+	width: 80%;
+	margin-left: 0;
+}
+
+
+.form-register input,
+.form-register label {
+	display: block;
+	width: 100%;
+	padding: 10px 15px;
+	margin: 20px 0;
+}
+
+
+.form-register input[type="text"] {
+	display: inline-block;
+	width: 45%;
+}
+
+
+.form-register select {
+	padding: 10px 15px;
+	margin: 10px 10px 0 0;
+	border: 1px solid #aaa;
+	background: white;
+	border-radius: 0;
+}
+
+
+.form-register input[type="radio"] {
+	display: inline-block;
+	width: 20px;
+	margin: -15px 0 -5px 20px;
+
+}
+
+.form-register input[type="submit"] {
+	font-size: 20px;
+	padding: 10px 15px;
+	background: hsla(115, 69%, 59%, 1);
+	border: 0;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
 
 
 
