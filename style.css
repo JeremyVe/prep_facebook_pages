@@ -19,6 +19,12 @@ select {
 }
 
 
+a {
+	text-decoration: none;
+	color: black;
+}
+
+
 /*=============================
 Header
 ===============================*/
@@ -207,14 +213,19 @@ Top Cover and Menu
 }
 
 
-.container-image img {
+.profile-picture {
+	border: 2px solid #ddd;
+	border-radius: 50%;
+	box-shadow: 0 15px 5px -5px rgba(0,0,0,0.3);
+}
+
+
+
+.container-cover-feature img.profile-picture {
 	position: absolute;
 	left: 25px;
 	bottom: -15px;
 	width: 170px;
-	border: 2px solid #ddd;
-	border-radius: 50%;
-	box-shadow: 0 10px 10px 10px rgba(0,0,0,0.3);
 }
 
 
@@ -238,7 +249,7 @@ Top Cover and Menu
 
 
 .container-menu li,
-.container-menu a {
+.container-menu .edit-profile {
 	display: inline-block;
 	padding: 15px 0;
 	width: 130px;
@@ -253,7 +264,7 @@ Top Cover and Menu
 }
 
 
-.container-menu a {
+.container-menu .edit-profile {
 	float: right;
 
 }
@@ -288,7 +299,8 @@ About Feature
 	line-height: 60px;
 }
 
-.title-about button {
+
+.button-right-center {
 	position: absolute;
 	top: 50%;
 	right: 10px;
@@ -321,16 +333,15 @@ About Feature
 	padding: 7px 0;
 }
 
+
 .information-about table {
 	margin-left: 30px;
 }
 
+
 .information-about td {
 	padding-left: 30px;
 }
-
-
-
 
 
 .container-about h2 {
@@ -341,6 +352,53 @@ About Feature
 .know-more p {
 	margin: 30px 50px 30px 30px;
 }
+
+
+/*===============================
+Friends Feature
+===============================*/
+
+.friend-feature li {
+	display: block;
+	position: relative;
+	width: 44%;
+	margin-left: 4%;
+	margin-top: 20px;
+	float: left;
+	border: 1px solid #eee;
+}
+
+.friend-feature li img,
+.friend-feature li h3,
+.friend-feature li p,
+.friend-feature li button {
+	display: inline-block;
+}
+
+
+
+.small-picture {
+	height: 100px;
+	width: 100px;
+}
+
+
+.friend-window h3 {
+	position: absolute;
+	top: 30px;
+	left: 130px;
+	font-size: 18px;
+}
+
+
+.friend-window p {
+	position: absolute;
+	top: 55px;
+	left: 130px;
+	font-size: 14px;
+	color: #999;
+}
+
 
 
 
