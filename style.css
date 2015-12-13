@@ -25,6 +25,7 @@ a {
 }
 
 
+
 /*=============================
 Header
 ===============================*/
@@ -52,7 +53,13 @@ header label,
 
 header .logo h2 {
 	font-size: 32px;
+	color: white;
 	float: left;
+}
+
+header .logo a {
+	text-decoration: none;
+	color: white;
 }
 
 
@@ -365,7 +372,7 @@ Friends Feature
 	margin-left: 4%;
 	margin-top: 20px;
 	float: left;
-	border: 1px solid #eee;
+	border: 1px solid #ddd;
 }
 
 .friend-feature li img,
@@ -400,10 +407,163 @@ Friends Feature
 }
 
 
+/*===============================
+NewsFeed Left
+===============================*/
+
+.col-recently-active {
+	width: 30%;
+	float: left;
+	height: 800px;
+}
+
+
+.col-newsfeed {
+	width: 70%;
+	float: right;
+	height: 800px;
+}
+
+
+.profile-little {
+	position: relative;
+	margin: 30px 30px 50px;
+	color: rgb(86,96,131);
+
+}
+
+
+.profile-little h3 {
+	position: absolute;
+	top: 40px;
+	left: 120px;
+	font-size: 16px;
+}
+
+
+.profile-little h4 {
+	position: absolute;
+	top: 60px;
+	left: 120px;
+	font-size: 12px;
+}
+
+
+h3.recently-archive {
+	font-size: 20px;
+	margin: 10px 30px;
+}
 
 
 
+.profile-recently-active,
+.comment-post {
+	position: relative;
+	margin: 30px;
+	color: rgb(86,96,131);
+}
 
 
+.very-small-picture {
+	height: 60px;
+	width: 60px;
+}
+
+
+.profile-recently-active h3,
+.comment-post h3 {
+	position: absolute;
+	top: 20px;
+	left: 70px;
+	font-size: 14px;
+}
+
+
+.profile-recently-active h4 {
+	position: absolute;
+	top: 40px;
+	left: 70px;
+	font-size: 10px;
+}
+
+
+.col-recently-active h4:last-child {
+	margin: 40px;
+}
+
+/*===============================
+NewsFeed Right
+===============================*/
+
+.write-post,
+.post {
+	position: relative;
+	width: 80%;
+	margin: 30px auto;
+	border: 1px solid #ddd;
+}
+
+
+.write-post h2 {
+	line-height: 40px;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}
+
+
+.write-post input[type="textarea"] {
+	display: block;
+	width: 90%;
+	height: 100px;
+	margin: 20px auto 60px;
+}
+
+
+.write-post input[type="submit"] {
+	position: absolute;
+	bottom: 10px;
+	right: 10%;
+	padding: 10px 20px;
+	background: rgb(86,96,131);
+	color: white;
+	border: 0;
+}
+
+
+.post > p {
+	margin: 30px;
+	color: #333;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+
+.post-bottom {
+	border-top: 1px solid #ddd;
+	padding: 10px 0;
+}
+
+
+.post-bottom > a,
+.post-bottom > p {
+	display: inline-block;
+	padding: 0 0 10px 30px;
+	font-size: 12px;
+}
+
+
+.comment-post h4 {
+	position: absolute;
+	top: 24px;
+	left: 160px;
+	font-size: 10px;
+}
+
+
+.comment-post p {
+	margin: 10px 70px 10px;
+	font-size: 14px;
+	line-height: 21px;
+}
 
 
