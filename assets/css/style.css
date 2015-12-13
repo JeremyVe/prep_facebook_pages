@@ -19,11 +19,17 @@ select {
 }
 
 
+/*
 a {
 	text-decoration: none;
 	color: black;
 }
+*/
 
+
+.main-container {
+	max-width: 100%;
+}
 
 
 /*=============================
@@ -31,15 +37,9 @@ Header
 ===============================*/
 
 header {
-	width: 100%;
 	height: 70px;
 	background: rgb(86,96,131);
 	color: white;
-}
-
-.header-container {
-	width: 80%;
-	margin: 0 auto;
 }
 
 
@@ -108,10 +108,6 @@ header .logo a {
 /*=============================
 Main Section
 ===============================*/
-
-.main-container {
-	max-width: 100%;
-}
 
 .feature-section {
 	width: 59%;
@@ -205,16 +201,21 @@ Form Section
 Top Cover and Menu
 ===============================*/
 
-.container-cover-feature {
+.container {
 	width: 80%;
 	margin: 0 auto;
+}
+
+
+.border {
+	border: 1px solid #ddd;
 }
 
 
 .container-image {
 	position: relative;
 	height: 400px;
-	background: url("assets/background/photo-fox.jpg");
+	background: url("../../assets/background/photo-fox.jpg");
 	background-size: cover;
 	background-position: 50%;
 }
@@ -228,7 +229,7 @@ Top Cover and Menu
 
 
 
-.container-cover-feature img.profile-picture {
+.container-image img.profile-picture {
 	position: absolute;
 	left: 25px;
 	bottom: -15px;
@@ -281,13 +282,6 @@ Top Cover and Menu
 /*===============================
 About Feature
 ===============================*/
-
-.container-feature-about {
-	width: 80%;
-	height: 500px;
-	margin: 20px auto;
-	border: 1px solid #ddd;
-}
 
 .title-about {
 	position: relative;
@@ -499,7 +493,7 @@ NewsFeed Right
 .post {
 	position: relative;
 	width: 80%;
-	margin: 30px auto;
+	margin: 30px auto 0;
 	border: 1px solid #ddd;
 }
 
@@ -549,6 +543,12 @@ NewsFeed Right
 	display: inline-block;
 	padding: 0 0 10px 30px;
 	font-size: 12px;
+}
+
+
+.comment-section {
+	border-top: 1px solid #ddd;
+	background: rgba(120,137,241,.3);
 }
 
 
