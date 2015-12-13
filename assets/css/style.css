@@ -18,7 +18,6 @@ select {
 	box-sizing: border-box;
 }
 
-
 /*
 a {
 	text-decoration: none;
@@ -26,9 +25,19 @@ a {
 }
 */
 
-
 .main-container {
 	max-width: 100%;
+}
+
+
+.container-center {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+.border {
+	border: 1px solid #ddd;
 }
 
 
@@ -45,7 +54,7 @@ header {
 
 header h2,
 header label,
-.header-about h3 {
+header #user {
 	display: inline-block;
 	line-height: 70px;
 }
@@ -86,23 +95,28 @@ header .logo a {
 		Header About Page
 		===============================*/
 
-.header-about form{
+header form{
 	display: inline-block;
 	width: 60%;
-	margin: 20px 0 0 100px;
+	margin: 16px 0 0 100px;
 }
 
-.header-about .search-users {
+header .search-users {
 	font-size: 16px;
 	width: 100%;
-	padding: 5px 15px;
+	padding: 10px 15px;
 	border: 0;
 }
 
-.header-about h3 {
+header #user {
  	float: right;
 }
 
+
+#user a {
+	text-decoration: none;
+	color: white;
+}
 
 
 /*=============================
@@ -201,18 +215,7 @@ Form Section
 Top Cover and Menu
 ===============================*/
 
-.container {
-	width: 80%;
-	margin: 0 auto;
-}
-
-
-.border {
-	border: 1px solid #ddd;
-}
-
-
-.container-image {
+.cover-image {
 	position: relative;
 	height: 400px;
 	background: url("../../assets/background/photo-fox.jpg");
@@ -221,15 +224,14 @@ Top Cover and Menu
 }
 
 
-.profile-picture {
+.round {
 	border: 2px solid #ddd;
 	border-radius: 50%;
 	box-shadow: 0 15px 5px -5px rgba(0,0,0,0.3);
 }
 
 
-
-.container-image img.profile-picture {
+.cover-image .user-picture {
 	position: absolute;
 	left: 25px;
 	bottom: -15px;
@@ -237,7 +239,7 @@ Top Cover and Menu
 }
 
 
-.container-image h2 {
+#user-name {
 	position: absolute;
 	bottom: 15px;
 	left: 220px;
@@ -245,19 +247,18 @@ Top Cover and Menu
 	font-size: 30px;
 }
 
-
-.container-menu {
-	border: 1px solid #ddd;
+.menu {
+	margin-bottom: 20px;
 }
 
 
-.container-menu ul {
+.menu ul {
 	display: inline-block;
 }
 
 
-.container-menu li,
-.container-menu .edit-profile {
+.menu li,
+.menu ul > a {
 	display: inline-block;
 	padding: 15px 0;
 	width: 130px;
@@ -266,15 +267,14 @@ Top Cover and Menu
 }
 
 
-.container-menu li:first-child {
+.menu li:first-child {
 	margin-left: 220px;
 	border-left: 1px solid #ddd;
 }
 
 
-.container-menu .edit-profile {
+.menu ul > a {
 	float: right;
-
 }
 
 
@@ -283,7 +283,7 @@ Top Cover and Menu
 About Feature
 ===============================*/
 
-.title-about {
+.title-section {
 	position: relative;
 	border-bottom: 1px solid #ccc;
 	background: #1E2436;
@@ -294,7 +294,7 @@ About Feature
 
 
 
-.title-about h2 {
+.title-section h2 {
 	display: inline-block;
 	font-size: 24px;
 	line-height: 60px;
@@ -316,7 +316,7 @@ About Feature
 }
 
 
-.information-about {
+.info-section {
 	width: 45%;
 	float: left;
 }
@@ -328,27 +328,29 @@ About Feature
 }
 
 
-.information-about th,
-.information-about td {
+.info-section table {
+	margin-left: 30px;
+}
+
+
+.info-section th,
+.info-section td {
 	text-align: left;
 	padding: 7px 0;
 }
 
 
-.information-about table {
-	margin-left: 30px;
-}
-
-
-.information-about td {
+.info-section td {
 	padding-left: 30px;
 }
 
 
-.container-about h2 {
+.info-section h2,
+.know-more h2 {
 	font-size: 26px;
 	margin: 40px 30px 20px;
 }
+
 
 .know-more p {
 	margin: 30px 50px 30px 30px;
@@ -359,20 +361,20 @@ About Feature
 Friends Feature
 ===============================*/
 
-.friend-feature li {
+.friend-window li {
 	display: block;
 	position: relative;
-	width: 44%;
-	margin-left: 4%;
+	width: 400px;
+	margin-left: 6%;
 	margin-top: 20px;
 	float: left;
 	border: 1px solid #ddd;
 }
 
-.friend-feature li img,
-.friend-feature li h3,
-.friend-feature li p,
-.friend-feature li button {
+.friend-window li img,
+.friend-window li h3,
+.friend-window li p,
+.friend-window li button {
 	display: inline-block;
 }
 
